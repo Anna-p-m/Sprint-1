@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 2.5rem;
+}
+nav {
+    display: flex;
+    background-color: grey;
+    height: 8.0rem;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.0rem;
+    margin: 1.0rem 1.0rem 0.5rem 1.0rem;
+}
+.logo {
+    width: 20%;
+    background-color: rgb(248, 98, 98);
+    margin: 1.0rem;
+}
+.index {
+    display: flex;
+    width: 60%;
+    background-color: rgb(248, 98, 98);
+    margin: 0.5rem;
+}
+.social {
+    display: flex;
+    width: 20%;
+    background-color: rgb(248, 98, 98);
+    margin: 1.0rem;
+}
+.slider {
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.0rem;
+    margin: 0.5rem 1.0rem 1.0rem 1.0rem;
+}
+.sliderPicture {
+    display: flex;
+    width: 100%;
+    background-color: yellow;
+    margin: 1.0rem;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 2.5rem;
+}
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(67, 67, 112);
+    width: 70%;
+    height: 25.0rem;
+    padding: 2.0rem;
+    margin: 1.0rem 0.5rem 1.0rem 1.0rem;
+}
+.article-1, .article-2, .article-3, .article-4 {
+    width: 49%;
+    margin-bottom: 1.0rem;
+    margin-top: 1.0rem;
+    background-color: rgb(12, 95, 203);
+}
+.article-online {
+    width: 100%;
+    background-color: rgb(143, 216, 229);
+    text-align: center;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(248, 98, 98);
+    height: 25.0rem;
+    width: 30%;
+    padding: 2.0rem;
+    margin: 1.0rem 1.0rem 1.0rem 0.5rem;
+}
+.aside-1, .aside-2 {
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+    margin-bottom: 1.0rem;
+    margin-top: 1.0rem;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 2.5rem;
+}
+.footerContent {
+    width: 100%;
+    background-color: orange;
+    margin: 1.0rem 1.0rem;
+}
+/*For Tablets*/
+@media only screen
+and (min-device-width: 600px) and (max-device-width: 800px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 246, 35);
+    }
+    article {
+        display: flex;
+        width: 97%;
+        margin: 1.0rem 1.0rem 0.5rem 1.0rem;
+    }
+    aside {
+        display: flex;
+        width: 97%;
+        margin: 0.5rem 1.0rem 1.0rem 1.0rem;
+    }
+}
+/*For Mobile Phones*/
+@media only screen
+and (max-device-width: 600px) {
+    nav {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .logo, .index, .social {
+        width: 100%;
+    }
+    section {
+        flex-direction: column;
+    }
+    article {
+        display: flex;
+        width: 94%;
+        margin: 1.0rem 1.0rem 0.5rem 1.0rem;
+    }
+    aside {
+        display: flex;
+        width: 94%;
+        margin: 0.5rem 1.0rem 1.0rem 1.0rem;
+    }
+}
